@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - Barberia Nelson</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">    
+</head>
+
+<body>
+
+<header>
+    <div class="caja">
+        <h1><img src="img/logo.png" class="logo" width="200px" alt="Logo"></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>  
+</header>
+
+<main>
+
+<form class="formulariocontacto">
+    <div>
+        <label for="nombreApellido">Nombre y Apellido</label>
+        <input type="text" id="nombreApellido" class="input-padron" required>
+
+        <label for="correoElectronico">Correo Electronico</label>
+        <input type="mail" id="correoElectronico" class="input-padron" required placeholder="email@dominio.com">
+
+        <label for="telefono">Telefono</label>
+        <input type="tel" id="telefono" class="input-padron" required placeholder="(xxx)xxx-xxxx">
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" cols="70" rows="10" class="input-padron" required></textarea>
+    </div>
+
+    <fieldset>
+        <legend>Como le gustaria que lo contectemos?</legend>
+        <label for="radioEmail"><input type="radio" id="radioEmail" value="email" name="contacto">Email</label>
+        <label for="radiotelefono"><input type="radio" id="radiotelefono" value="telefono" name="contacto">Telefono</label>
+        <label for="radiowhatsapp"><input type="radio" id="radiowhatsapp" value="Whatsapp" name="contacto" checked>Whatsapp</label>        
+    </fieldset>
+
+    <fieldset>
+        <legend>En cual Horario prefiere ser atendido?</legend>
+        <select>
+            <option>Manana</option>
+            <option>Tarde</option>
+            <option>Noche</option>
+        </select>
+    </fieldset>
+    
+    <label class="checkbox"><input type="checkbox" checked>Le gustaria recibir notificaciones de la Barberia?</label>
+    <input type="submit" value="Enviar formulario" class="enviar">
+
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Dia</th>
+            <th>Horario</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Lunes</td>
+            <td>8:00a.m. ~  8:00p.m.</td>
+        </tr>
+        <tr>
+            <td>Miercoles</td>
+            <td>8:00a.m. ~  8:00p.m.</td>
+        </tr>
+        <tr>
+            <td>Viernes</td>
+            <td>8:00a.m. ~  8:00p.m.</td>
+        </tr>
+    </tbody>
+</table>
+
+</main>
+
+<footer>
+    <img src="img/logo-blanco.png" alt="Logo">
+    <p class="copyright">&copy; Copyright Nelson Diaz - 2023</p>
+</footer>
+
+</body>
+</html>
